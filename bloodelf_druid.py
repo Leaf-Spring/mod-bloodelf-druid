@@ -6,9 +6,7 @@ BLOODELF_RACE_BIT = 512  # Bit correspondiente a la raza Elfo de Sangre (2^9)
 
 # Spells raciales representativos de Elfo de Sangre en 3.3.5a:
 # - 28730: Torrente Arcano (Mana)
-# - 28877: Afinidad Arcana (+10 Encantamiento)
-# - 822: Resistencia a la Magia
-TARGET_RACIAL_SPELLS = {28730, 28877, 822}
+TARGET_RACIAL_SPELLS = {28730}
 
 def patch_char_base_info(filename="CharBaseInfo.dbc", race=10, class_id=11):
     print("=== 1/3: Procesando CharBaseInfo.dbc ===")

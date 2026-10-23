@@ -8,7 +8,7 @@ PYTHON_SCRIPT="bloodelf_druid.py"
 echo "=== 1. Verificando e Instalando mpqcli ==="
 if ! command -v mpqcli &> /dev/null; then
     echo "[!] mpqcli no encontrado. Instalando..."
-    curl -fsSL https://raw.githubusercontent.com/thegraydot/mpqcli/main/scripts/install.sh | bash
+    curl -fsSL https://github.com/thegraydot/mpqcli/releases/latest/download/install.sh | bash
     export PATH="$HOME/.local/bin:$PATH"
     
     if command -v mpqcli &> /dev/null; then
